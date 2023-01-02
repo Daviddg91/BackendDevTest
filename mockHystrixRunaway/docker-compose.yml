@@ -1,0 +1,14 @@
+---
+version: '2'
+services:
+    springproject:
+    build: .
+    image: mockHytstrixRunaway-img
+    networks:
+        - springboot-network
+    ports:
+      - 5000:5000  
+networks:
+  springboot-network:
+    driver: bridge
+ 
