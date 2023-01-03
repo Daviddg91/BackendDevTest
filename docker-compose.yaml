@@ -23,6 +23,8 @@ services:
     volumes:
       - ./shared/simulado:/app
     command: ./bin/simulado -f /app/mocks.json
+    networks:
+    - springboot-network
   k6:
     image: loadimpact/k6:0.28.0
     ports:
@@ -34,8 +36,8 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
   springproject:
-    build: .
-    image: kafkaproject-img
+    build: ./mockHystrixRunaway
+    image: mockhytstrixrunaway-img
     depends_on:
         - simulado
     networks:

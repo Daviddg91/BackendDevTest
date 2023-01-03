@@ -1,7 +1,5 @@
 server:
   port: 5000
-
-
-
-
-mockurl: http://localhost:3001
+  
+#mockurl: http://localhost:3001
+mockurl: http://simulado:80
