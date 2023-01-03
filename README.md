@@ -1,5 +1,5 @@
 # BackendDevTest: Hystrix Mock RunAway1.0
-This app is dockerized in the general docker-compose.yaml but also can import project maven in IDE.
+This app is dockerized in the general docker-compose.yaml but also can import maven project in IDE.
 
 # Installation:
 
